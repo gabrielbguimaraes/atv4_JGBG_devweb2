@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Tarefa</title>
+</head>
+<body>
+    <h1>Editar Tarefa</h1>
+    <form action="/tarefas/<%= id %>?_method=PUT" method="POST">
+        <input type="text" name="nome" value="<%= tarefa.nome %>" required>
+        <label>
+            Status:
+            <input type="checkbox" name="status" <%= tarefa.status ? 'checked' : '' %>>
+        </label>
+        <button type="submit">Salvar Alterações</button>
+    </form>
+    <a href="/">Voltar para a lista de tarefas</a>
+</body>
+</html>
