@@ -1,8 +1,5 @@
 
 ```markdown
-# API de Gerenciamento de Tarefas
-
-Esta é uma API simples desenvolvida em Express.js para gerenciar uma lista de tarefas. A aplicação permite a adição, visualização, atualização e exclusão de tarefas.
 
 ## Requisitos
 
